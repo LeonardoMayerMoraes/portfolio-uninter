@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio Pessoal</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#sobre-mim">Sobre Mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section id="sobre-mim" class="section">
+    <h2>Sobre Mim</h2>
+    <div class="bio-container" style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+        <img src="imagens/eu.1.jpeg" alt="Estudante sorrindo para a câmera com fundo neutro, apresentando postura confiante e amigável" style="width: 160px; height: 160px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+        
+        <p style="flex: 1; min-width: 280px; line-height: 1.6;">
+            Olá! Meu nome é Leonardo Mayer Moraes. Sou estudante de tecnologia no Centro Universitário Internacional UNINTER e apaixonado por desenvolvimento de sistemas. Atualmente, venho focando meus estudos na área de análise de sistemas, modelagem e banco de dados relacionais.
+        </p>
+    </div>
+</section>
+
+        <section id="formacao" class="section">
+            <h2>Formação Acadêmica</h2>
+            <div class="timeline">
+                <div class="edu-item">
+                    <h3>Graduação em ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</h3>
+                    <p><strong>Centro Universitário Internacional UNINTER</strong></p>
+                    <p>Período: 2º Semestre 2026 - Atual</p>
+                </div>
+                <div class="edu-item">
+                    <h3>Idiomas</h3>
+                    <p>Português (Nativo) | Inglês (Intermediário)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section">
+    <h2>Portfólio</h2>
+    <p style="margin-bottom: 2rem;">Abaixo está um dos projetos técnicos que desenvolvi na área de dados:</p>
+    
+    <div class="projects-grid">
+        <div class="project-card" style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <img src="imagens/bancodedados.png" alt="Diagrama de banco de dados relacional para sistema de gerenciamento de equipamentos com tabelas conectadas por chaves e descrição de entidades" style="width: 100%; max-height: 250px; object-fit: contain; background-color: #fafafa; border-radius: 4px; margin-bottom: 1rem; border: 1px solid #eee;">
+            
+            <h3 style="color: #0f2a4a; margin-bottom: 0.5rem;">Sistema de Gerenciamento de Equipamentos</h3>
+            <p style="font-size: 0.95rem; color: #555; line-height: 1.5;">
+                Desenvolvimento completo de modelagem de banco de dados relacional e criação de scripts SQL estruturados para o controle físico e lógico de inventários de TI.
+            </p>
+        </div>
+    </div>
+</section>
+
+        <section id="contato" class="section">
+            <h2>Contato</h2>
+            <form id="contactForm" class="contact-form no-submit">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+                </div>
+                
+                <button type="submit" class="btn-submit">Enviar Mensagem</button>
+            </form>
+            <div id="formFeedback" class="form-feedback hidden"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
